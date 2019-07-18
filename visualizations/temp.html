@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Analysis - visualization-temp</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    em { 
+      font-size:15px;
+      font-weight:bolder;
+      color:#04B4AE;
+      margin-left:5%;
+    }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <button class="latitude" onclick = "location.href='../index.html'" type="button">
+                    <strong>Latitude</strong>
+                  </button>
+              </div>             
+            
+            <div class="col-sm-5">
+              <div class="box-hidden"></div>
+            </div> 
+ 
+            <div class="col-md-4">
+                <nav class="navbar">
+                  <div class="container">
+                        <ul class="nav navbar-nav">
+                          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:black;">Plots <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                            <li><a href="temp.html">Max Temperature</a></li>
+                            <li><a href="humidity.html">Humidity</a></li>
+                            <li><a href="cloudiness.html">Cloudiness</a></li>
+                            <li><a href="wind.html">Wind Speed</a></li>
+                          </ul>
+                          </li>
+                          <li><a href="../comparison.html" style="color:black;">Comparison</a></li>
+                          <li><a href="../data.html" style="color:black;">Data</a></li>
+                        </ul>
+                    </div><!--container-fluid-->
+
+                  </nav>
+            </div> <!-- box col-md-4 -->
+        </div> <!-- row -->
+    </div> <!-- container -->
+
+    <div class="row landing-pg">
+      <section>
+      <div class='col-md-7'>
+        <div class='jumbotron'>
+          <h1><b>Max Temperature</b></h1>
+        <hr>
+      </div><!--jumbotron-->
+
+      <figure>
+        <a href="../assets/images/Fig1.png">
+          <img id="fig5" src="../assets/images/Fig1.png" alt="City Latitude vs Max Temp" width="575" height="575">
+        </a>
+      </figure>  
+
+      <article>
+     
+        <p class="lat-1" style="color:grey;">As expected, the weather becomes significantly warmer as one approaches the equator (0 degree Latitude).
+        More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than the northern hemisphere. 
+        This may be due to the tilt of the earth at the time of the year when this data was gathered.
+        </p>
+      
+      </article>
+        
+      <hr>
+    </div><!--col-md-7-->
+    
+    <div class='col-md-5 visualizations'>
+      <div class='jumbotron'>
+        <h1><b>Visualizations</b></h1>
+        <hr>
+      </div><!--jumbotron-->
+
+      <div class='figs'>
+        <figure class='upper-row'>
+              <a href="../assets/images/Fig1.png">
+              <img id="fig1" src="../assets/images/Fig1.png" alt="City Latitude vs Max Temp" width="220" height="220">
+            </a>
+              <a href="../assets/images/Fig2.png">
+              <img id="fig2" src="../assets/images/Fig2.png" alt="City Latitude vs Humidity" width="210" height="210">
+            </a>
+        </figure>
+      </div>  
+
+      <div class='figs'>
+        <figure class='lower-row'>
+  
+              <a href="../assets/images/Fig3.png">
+              <img id="fig3" src="../assets/images/Fig3.png" alt="City Latitude vs Cloudiness" width="210" height="210">
+            </a>
+              <a href="../assets/images/Fig4.png">
+              <img id="fig4" src="../assets/images/Fig4.png" alt="City Latitude vs Wind Speed" width="210" height="210">
+            </a>
+      
+         </figure>
+        </div><!--figs-->
+  
+
+    </div><!--class=col-md-5-->
+    
+    </section>
+
+    <footer class="footer">
+        <p id='footer'>Copyright Coding Bootcamp 2019</p>
+    </footer>
+
+
+
+
+    </div><!--row-->
+
+
+
+
+  </body>
+</html>

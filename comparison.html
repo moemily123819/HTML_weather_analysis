@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Analysis - Comparisons</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="visualizations/reset.css">
+  <link rel="stylesheet" href="visualizations/style.css">
+  <style>
+      em { 
+        font-size:35px;
+        font-weight:bolder;
+        color:#04B4AE;
+        margin-left:10%;
+      }
+      </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="index.html">
+                  <button class="btn latitude"><strong>Latitude</strong></button>
+                </a>
+            </div>             
+
+            <div class="col-sm-5">
+              <div class="box-hidden"></div>
+            </div> 
+ 
+            <div class="col-md-4">
+                <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="nav-header">
+                        <ul class="nav navbar-nav">
+                          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:black;">Plots <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                            <li><a href="visualizations/temp.html">Max Temperature</a></li>
+                            <li><a href="visualizations/humidity.html">Humidity</a></li>
+                            <li><a href="visualizations/cloudiness.html">Cloudiness</a></li>
+                            <li><a href="visualizations/wind.html">Wind Speed</a></li>
+                          </ul>
+                          </li>
+                          <li><a href="comparison.html" style="color:black;">Comparison</a></li>
+                          <li><a href="data.html" style="color:black;">Data</a></li>
+                        </ul>
+                      </div><!--nav-header-->
+                    </div><!--container-fluid-->
+
+                  </nav>
+            </div> <!-- box col-md-3 -->
+        </div> <!-- row -->
+    </div> <!-- container -->
+
+    <div class="row">
+      <section>
+      <div class='col-md-12 comparisons-pg'>
+        <div class='jumbotron'>
+          <h1><b>Comparisons: Latitude vs. X</b></h1>
+        <hr>
+        </div><!--jumbotron-->
+    
+      <div class='comp-figs'>
+        <div class="row">
+          <p id='comp-click'><strong>Click any plot to get an in-depth analysis.</strong></p>
+        </div> 
+
+          <div class="row">
+            <figure class='col-md-6 upper-row'>
+               <a href="assets/images/Fig1.png"> 
+                <figcaption><em>vs Max Temperature</em></figcaption>
+                <img id="fig1" src="assets/images/Fig1.png" alt="City Latitude vs Max Temp" width="600" height="600">
+              </a>
+            </figure>
+          
+            <figure class='col-md-6 upper-row'>
+                <a href="assets/images/Fig2.png"> 
+                <figcaption><em>vs Humidity</em></figcaption>
+                <img id="fig1" src="assets/images/Fig2.png" alt="City Latitude vs Humidity" width="600" height="600">
+              </a>
+            </figure>
+          </div> <!--row-->
+
+        <figure class='col-md-6 lower-row'>
+              <a href="assets/images/Fig3.png"> 
+              <figcaption><em>vs Cloudiness</em></figcaption>
+              <img id="fig1" src="assets/images/Fig3.png" alt="City Latitude vs Cloudiness" width="600" height="600">
+            </a>
+          </figure>
+
+          <figure class='col-md-6 lower-row'>
+
+              <a href="assets/images/Fig4.png"> 
+              <figcaption><em>vs Wind Speed</em></figcaption>
+              <img id="fig1" src="assets/images/Fig4.png" alt="City Latitude vs Wind Speed" width="600" height="600">
+            </a>
+        </figure>
+      </div>
+      
+      </div><!--comp-figs-->
+
+      </div><!--class=comparisons-pg-->
+    
+    </section>
+
+
+    </div><!--row-->
+
+
+
+
+  </body>
+</html>

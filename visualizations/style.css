@@ -1,0 +1,307 @@
+.body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif; 
+    font-size: 18px;
+/*    line-height: 150%;*/
+    color:black;
+    background: #FFF;
+  }
+
+
+#fig1, #fig2, #fig3, #fig4, #fig5 {
+    float:left;
+    padding:10px;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+#comp-click {
+    float:left;
+    position:relative;
+    font-weight: bolder;
+    font-size:30px;
+    padding: 0;
+    line-height:0;
+    min-height: 100px;
+    min-width: 500px;
+    margin-bottom:50px;
+    z-index:1;
+}
+
+.figs {
+  float: left;
+  display:inline-block;
+  width: 50%;
+  padding: 10px;
+}    
+
+.comp-figs {
+  float: left;
+  width: 50%%;
+  padding: 25px;
+}    
+
+    
+p.lat-1, p.lat-2 {
+    display:block;
+    font-size:20px;
+    color:grey;
+    margin-left:50px;
+    margin-bottom:50px;
+    text-align:left;
+    line-height:200%;
+}
+  
+.box {
+  min-height: 50px;
+  padding: 15px;
+  display:inline-block;
+  text-align:center;  
+}
+
+
+.box-hidden {
+  display: none;
+}
+
+.latitude {
+  font-weight: 1000;
+  padding: 25px;
+  margin-top:5px;
+  background-color:#04B4AE;
+  color: #fff;
+  min-height:80px;
+  min-width:290px;
+  font-size: 50px;
+  vertical-align : middle;
+  text-align:center;
+  }
+
+.landing-pg, .comparisons-pg {
+  background-color:#f1f1f1;  
+  border-style: solid;
+  border-width: 40px 20px 40px 40px;  
+  border-color:#f1f1f1;
+  text-align:center;
+    
+}
+
+
+
+
+.summary, .visualizations {
+  position:relative;
+  float:left;  
+  font-weight: 500;
+  font-size:20px;
+  padding: 5px;
+  color: #04B4AE;
+  border-right: solid 10px #f1f1f1;
+  text-align:center;
+  background-color:white;
+  display:inline-block;
+  }
+
+.jumbotron {
+    font-weight:bolder;
+    color: #04B4AE;
+    background-color:white;
+    font-size:20px;
+
+}
+
+
+
+
+.dropbtn {
+  background:#fff;
+  color:black;
+  padding: 10px;
+  min-width:150px;
+  min-height:80px;
+  font-size: 18px;
+  font-weight:800;
+  text-align:center;
+  border:none;  
+  right:0;  
+  }
+
+.navbar {
+/*   margin-right:300px;*/
+   position:absolute; 
+   font-weight:800;
+   font-size:25px; 
+   display:inline-block;
+   z-index:2; 
+}
+
+li {
+  display: inline;
+}
+
+.dropdown {
+   position:relative;
+   font-size: 25px;
+   font-weight:800;
+   color:black; 
+   display:inline-block;
+   left:0;
+   right:auto;
+}
+
+
+.dropbtn:hover {
+    display: block;
+    background-color: #ddd;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right:0;
+  left:auto;
+  background-color: #ddd;
+  color: black;
+  min-width: 160px;
+  font-size:25px;  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropbtn {background-color: #ddd;} 
+
+.comparison:hover, .data:hover {
+    background-color: #ddd;
+} 
+
+
+table{
+    font-weight:bolder;
+    width:80%;   
+    font-weight:bolder;
+    border-right: solid 30px #f1f1f1;
+    border-left: solid 30px #f1f1f1;
+}    
+
+.table-bordered {
+    font-weight:bolder;
+    border-right: solid 30px #ddd;
+    border-left: solid 30px #ddd;
+}    
+
+td:nth-child(1) {
+  width: 50px;
+  text-align:right;  
+  }
+td:nth-child(2) {
+  width: 150px;
+  text-align:right;  
+  }
+td:nth-child(3) {
+  width: 100px;
+  text-align:right;  
+  }
+td:nth-child(4) {
+  width: 60px;
+  text-align:center;  
+ 
+  }
+td:nth-child(5) {
+  width: 60px;
+  text-align:right;  
+  }
+td:nth-child(6) {
+  width: 100px;
+  text-align:right;  
+  }
+td:nth-child(7) {
+  width: 100px;
+  text-align:right;  
+  }
+td:nth-child(8) {
+  width: 100px;
+  text-align:right;  
+  }
+td:nth-child(9) {
+  width: 100px;
+  text-align:right;  
+  }
+td:nth-child(10) {
+  width: 100px;
+  text-align:right;  
+  }
+
+
+tr:nth-child(even) {background-color: #f1f1f1;}
+
+th {
+  background-color: #04B4AE;
+  color: white;
+}
+
+
+
+#footer {
+    display:inline-block;
+    height:70px;
+    vertical-align:middle;
+    line-height:55px;
+    background-color:#848484;
+    font-size:20px;
+    border-top: solid 10px #04B4AE;
+    width:100%;
+    text-align:center;
+    color:white;
+
+}
+
+
+/*.dropdown-menu:hover  {
+/*    background-color: #D8D8D8;
+/*}
+
+
+/* Here we define some styles that will ONLY be applied at screen sizes below 480 pixels */
+@media (max-width: 520px) {
+    .latitude {
+      font-weight: 1000;
+      padding: 25px;
+      margin-top:5px;
+      color: #fff;
+      background:#04B4AE;
+      min-height:80px;
+      font-size: 50px;
+      vertical-align : middle;
+      text-align:center;
+  }
+
+   .dropdown-menu {
+      display: block;
+      position: relative;
+      background-color: #ddd;
+      color:black;
+      left:0;
+      right:auto;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+}
+    
+@media screen and (max-width: 520px) {
+  .figs {
+      width: 100%;
+      padding:5%;
+  }
+}

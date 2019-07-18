@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Analysis</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="visualizations/reset.css">
+  <link rel="stylesheet" href="visualizations/style.css">
+  <style>
+    em { 
+      font-size:18px;
+      font-weight:bolder;
+      color:#04B4AE;
+    }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <button class="latitude" onclick = "location.href='index.html'" type="button">
+                  <strong>Latitude</strong>
+                </button>
+            </div>
+
+            <div class="col-sm-5">
+              <div class="box-hidden"></div>
+            </div> 
+ 
+            <div class="col-md-4">
+                <nav class="navbar">
+                  <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:black;">Plots <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="visualizations/temp.html" href="#">Max Temperature</a></li>
+                              <li><a href="visualizations/humidity.html" href=" #">Humidity</a></li>
+                              <li><a href="visualizations/cloudiness.html" href="#">Cloudiness</a></li>
+                              <li><a href="visualizations/wind.html" href="#">Wind Speed</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="comparison.html" style="color:black;">Comparison</a></li>
+                          <li><a href="data.html" href='#' style="color:black;">Data</a></li>
+                        </ul>
+                    </div><!--container-fluid-->
+                  </nav>
+            </div> <!-- box col-md-4 -->
+        </div> <!-- row -->
+    </div> <!-- container -->
+
+    <div class="row landing-pg">
+      <section>
+      <div class='col-md-7 summary'>
+        <div class='jumbotron'>
+          <h1><b>Summary: Latitude vs. X</b></h1>
+        <hr>
+      </div><!--jumbotron-->
+
+        <row>
+        <a href="assets/images/Fig1.png">
+          <img id="fig1" src="assets/images/Fig1.png" alt="City Latitude vs Max Temp" width="250" height="250">
+        </a>
+      
+        <p class="lat-1" style="color:grey;">The purpose of this project is to analyze how weather changes as you get closer to the equator.  To accomplish this analysis,
+        we first pulled data from the OpenWeathermapy API to assemble a dataset on over 500 cities.</p>
+      
+        <p class='lat-2' style="color:grey;">  After assembling the dataset, we used Matlibplot to plot various aspects of the weather vs latitude.  Factors we looked at included:
+        temperature, cloudiness, wind speed and humidity.  This site provides the source data and visualizations created as part of
+        part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+        </p>
+      </row>
+        
+      <hr>
+    </div><!--col-md-7-->
+    
+    <div class='col-md-5 visualizations'>
+      <div class='jumbotron'>
+        <h1><b>Visualizations</b></h1>
+        <hr>
+      </div><!--jumbotron-->
+      <div class='row'>
+<!--          <div class='figs'>-->
+              <div class='upper-row col-sm-3'>
+            <a href="assets/images/Fig1.png">
+            <figcaption style='text-align:center; width:250px;'><em>vs Max Temp</em></figcaption>
+            <img id="fig1" src="assets/images/Fig1.png" alt="City Latitude vs Max Temp" width="250" height="250">
+             </a>
+            </div>
+            <div class='upper-row col-sm-offset-3 col-sm-3'>
+              <a href="assets/images/Fig3.png">
+            <figcaption  style='text-align:center; width:250px; float:left;'><em>vs Cloudiness</em></figcaption>
+            <img id="fig3" src="assets/images/Fig3.png" alt="City Latitude vs Cloudiness" width="250" height="250">
+          </a>
+        </div>
+ <!--     </div>--><!--figs-->
+    </div><!--row-->
+    <div class='row'>
+        <div class='lower-row  col-sm-3'>
+
+            <a href="assets/images/Fig2.png">
+              <figcaption style='text-align:center; width:250px; float:left;'><em>vs Humidity</em></figcaption>
+              <img id="fig2" src="assets/images/Fig2.png" alt="City Latitude vs Humidity" width="250" height="250">
+            </a>
+          </div>
+          <div class='lower-row col-sm-offset-3 col-sm-3'>
+                <a href="assets/images/Fig4.png">
+              <figcaption style='text-align:center; width:250px; float:left;'><em>vs Wind Speed</em></figcaption>
+              <img id="fig4" src="assets/images/Fig4.png" alt="City Latitude vs Wind Speed" width="250" height="250">
+            </a>
+          </div>
+    </div><!--row-->
+    </div><!--jumbotron-->
+
+    </div><!--class=col-md-5-->
+    
+    </section>
+
+    <footer class="footer">
+        <p id='footer'>Copyright Coding Bootcamp 2019</p>
+    </footer>
+
+
+
+
+    </div><!--row-->
+
+
+
+
+  </body>
+</html>
